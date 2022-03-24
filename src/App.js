@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { Footer, Navbar } from "./components";
 import {
   Authentication,
   Cart,
@@ -13,6 +14,7 @@ import {
 const App = () => {
   return (
     <>
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/auth' element={<Authentication />} />
@@ -22,6 +24,7 @@ const App = () => {
         <Route path='/profile' element={<Profile />} />
         <Route path='/wishlist' element={<Wishlist />} />
       </Routes>
+      <Footer />
     </>
   );
 };
