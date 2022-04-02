@@ -1,30 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaHeart, FaShoppingBag, FaRegUserCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 export const Navbar = () => {
+  const [cartCount, setCartCount] = useState(2);
+  const [wishlistCount, setWishlistCount] = useState(2);
   return (
     <nav>
-      <div class='nav-section nav-left'>
-        <button class='nav-section-items btn'>
-          <a class='logo' href='../index.html'>
-            {" "}
-            BU{" "}
-          </a>
+      <div className='nav-section nav-left'>
+        <button className='nav-section-items btn'>
+          <Link className='logo' to='/'>
+            BU
+          </Link>
         </button>
       </div>
-      <div class='search'>
-        <input type='search' class='input-field' placeholder='Search' />
+      <div className='search'>
+        <input type='search' className='input-field' placeholder='Search' />
       </div>
-      <div class='nav-section nav-icons'>
-        <a class='link-no-style' href='./cart.html'>
-          <i class='fas fa-shopping-bag nav-section-items'></i>
-        </a>
-
-        <a class='link-no-style' href='./wishlist.html'>
-          <i class='fas fa-heart nav-section-items'></i>
-        </a>
-        <a class='link-no-style' href='./login.html'>
-          <i class='far fa-user-circle nav-section-items'></i>
-        </a>
+      <div className='nav-section nav-icons '>
+        <Link to='/cart' className='link-no-style m-r-3'>
+          <FaShoppingBag />
+        </Link>
+        <Link to='/wishlist' className='link-no-style m-r-3'>
+          <FaHeart />
+        </Link>
+        <Link to='/login' className='link-no-style m-r-2'>
+          <FaRegUserCircle />
+        </Link>
       </div>
     </nav>
   );

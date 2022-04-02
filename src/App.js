@@ -13,7 +13,7 @@ import {
 
 const App = () => {
   return (
-    <>
+    <div className='app'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -25,7 +25,7 @@ const App = () => {
         <Route path='/wishlist' element={<Wishlist />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 };
 
