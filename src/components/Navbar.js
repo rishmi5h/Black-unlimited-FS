@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaHeart, FaShoppingBag, FaRegUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export const Navbar = () => {
-  const [cartCount, setCartCount] = useState(2);
-  const [wishlistCount, setWishlistCount] = useState(2);
   return (
     <nav>
       <div className='nav-section nav-left'>
