@@ -13,9 +13,9 @@ export const Navbar = () => {
           </Link>
         </button>
       </div>
-      <div className='search'>
+      {/* <div className='search'>
         <input type='search' className='input-field' placeholder='Search' />
-      </div>
+      </div> */}
       <div className='nav-section nav-icons '>
         <Link to='/cart' className='link-no-style m-r-3'>
           <FaShoppingBag />
