@@ -1,0 +1,1 @@
+export { useProductsData } from "./getProductsData";
