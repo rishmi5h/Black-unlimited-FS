@@ -1,0 +1,53 @@
+.card {
+  box-shadow: none;
+}
+
+.vertical-card {
+  max-width: 17.5rem;
+}
+.horizontal-card {
+  max-width: 28rem;
+  border-radius: 0.625rem;
+}
+
+.card:hover {
+  box-shadow: 12px 12px 16px 0 var(--shadow-grey),
+    -8px -8px 12px 0 var(--shadow-black);
+}
+
+.wishlist-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--grey);
+  /* background-color: inherit; */
+}
+.wishlist-btn:hover {
+  color: var(--primary-color);
+}
+
+.horizontal {
+  background-color: inherit;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.vertical-center {
+  align-items: center;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.add-cart-btn .fa-shopping-cart {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+.add-cart-btn:hover .fa-shopping-cart {
+  font-size: 1rem;
+  color: var(--white);
+}
