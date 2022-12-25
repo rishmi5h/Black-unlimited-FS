@@ -1,0 +1,12 @@
+.logo {
+  width: 3rem;
+  padding: 1rem;
+  border: 1px solid var(--primary-color);
+  text-decoration: none;
+  font-size: large;
+  border-radius: 6px;
+}
+
+.nav-icons {
+  font-size: 1.5rem;
+}

@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Products = () => {
+export const Signup = () => {
   return (
     <div>
-      <h2>Products Page</h2>
-      <Link to='/'>Home </Link>
+      <h2>Signup Page</h2>
+      <Link to='/login'>Login </Link>
     </div>
   );
 };
-
-export { Products };
