@@ -5,12 +5,12 @@ export const Footer = () => {
     <div className='text-center'>
       Made with ❤️ by{" "}
       <a
-        href='https://github.com/rishimish'
+        href='https://github.com/rishmi5h'
         target={"_blank"}
         className='link-no-style'
         rel='noreferrer'
       >
-        rishimish
+        rishmi5h
       </a>
     </div>
   );
